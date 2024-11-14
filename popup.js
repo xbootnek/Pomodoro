@@ -1,5 +1,5 @@
-let breakTime = 4; // 6 seconds
-let workTime = 6; // 6 second
+let breakTime = 5 * 60;  // Break for 5 minutes in seconds
+let workTime = 25 * 60;  // Break for 25 minutes in seconds
 let timeLeft = workTime;
 let isWorkSession = true;
 let timerInterval;
