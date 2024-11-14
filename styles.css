@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 200px;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+/*  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 50px;
+  right: 50px;
+*/
+	    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    margin-top: -100px /* half of you height */
+    width: 400px;
+    margin-left: -200px /* half of you width */
+}
+
+h1 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#timer {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.flashing {
+  animation: flash 1s infinite;
+  transition-duration: 6s;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
