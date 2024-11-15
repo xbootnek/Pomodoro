@@ -5,7 +5,7 @@ let isWorkSession = true;
 let timerInterval;
 let isRunning = false;
 let isPaused = false; // New variable to track pause state
-const startHour = 9;
+const startHour = 7;
 const endHour = 18;
 
 const timerDisplay = document.getElementById("timer");
