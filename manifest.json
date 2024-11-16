@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "My Pomodoro",
   "version": "5.0",
-  "description": "A Pomodoro timer extension with work and break intervals.",
+  "description": "A Pomodoro timer web app.",
   "permissions": ["storage", "notifications"],
   "icons": {
     "16": "icon16.png"
