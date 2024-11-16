@@ -5,7 +5,7 @@ let isWorkSession = true;
 let timerInterval;
 let isRunning = false;
 let isPaused = false; // New variable to track pause state
-const startHour = 7;
+const startHour = 9;
 const endHour = 18;
 
 const timerDisplay = document.getElementById("timer");
@@ -26,7 +26,17 @@ function updateDisplay() {
   timerDisplay.textContent = `${minutes}:${seconds}`;
   isWorkSession ? (document.getElementById("startStopButton").style.backgroundColor = 'lightgreen' , startStopButton.textContent = "Work now") :
 	  (document.getElementById("startStopButton").style.backgroundColor = 'red' , startStopButton.textContent = "Break now");
+  
+/*  // Update the message only when the timer reaches zero and is paused
+  if (timeLeft === 0 && isPaused) {
+    messageDisplay.textContent = isWorkSession ? "Back to work!" : "Time for a break!";
+    messageDisplay.style.visibility = "visible";
+  } else {
+    messageDisplay.style.visibility = "hidden";
   }
+*/
+}
+
 
 // Start timer if within active hours
 function startTimer() {
@@ -129,4 +139,4 @@ setInterval(() => {
 
 updateDisplay();
 checkStartTime();
-												
+												  
