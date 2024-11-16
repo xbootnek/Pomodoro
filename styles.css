@@ -1,3 +1,4 @@
+/*16 Nov*
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -7,14 +8,8 @@ body {
 }
 
 .container {
-/*  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: sticky;
-  top: 50px;
-  right: 50px;
-*/
-	    position: absolute;
+
+	position: absolute;
     left: 50%;
     top: 50%;
     height: 200px;
@@ -39,18 +34,15 @@ button {
   cursor: pointer;
 }
 .flashing {
-  animation: flash 1s infinite;
+  animation: flash 5s infinite;
   transition-duration: 6s;
 }
 
 @keyframes flash {
-  0% {
+  0%, 100% {
     opacity: 1;
   }
   50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
